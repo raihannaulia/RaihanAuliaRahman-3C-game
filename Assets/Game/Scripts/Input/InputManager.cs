@@ -16,6 +16,14 @@ public class InputManager : MonoBehaviour
     public Action OnCancelClimb;
 
     public Action OnChangePOV;
+
+    public Action OnCrouchInput;
+
+    public Action OnGlideInput;
+
+    public Action OnCancelGlide;
+
+    public Action OnPunchInput;
     private void Update()
     {
         CheckSprintInput();
@@ -69,7 +77,7 @@ public class InputManager : MonoBehaviour
 
         if (isPressCrouchInput)
         {
-            Debug.Log("Crouch");
+            OnCrouchInput();
         }
     }     
     
@@ -99,7 +107,7 @@ public class InputManager : MonoBehaviour
         bool isPressGlideInput = Input.GetKeyDown(KeyCode.G);
         if (isPressGlideInput)
         {
-            Debug.Log("Glide");
+            OnGlideInput();
         }
     }
 
@@ -112,6 +120,10 @@ public class InputManager : MonoBehaviour
             {
                 OnCancelClimb();
             }
+            if (OnCancelGlide != null)
+            {
+                OnCancelGlide();
+            }
         }
     }
 
@@ -120,7 +132,7 @@ public class InputManager : MonoBehaviour
         bool isPressPunchInput = Input.GetKeyDown(KeyCode.Mouse0);
         if (isPressPunchInput)
         {
-            Debug.Log("Punch");
+            OnPunchInput();
         }
     }
 

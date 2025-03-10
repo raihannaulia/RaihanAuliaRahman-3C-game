@@ -1,4 +1,5 @@
 using Cinemachine;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -16,6 +17,8 @@ public class CameraManager : MonoBehaviour
 
     [SerializeField]
     private InputManager _inputManager;
+
+    public Action OnChangePerspective;
 
     private void Start()
     {
@@ -58,6 +61,7 @@ public class CameraManager : MonoBehaviour
             _tpsCamera.gameObject.SetActive(true);
             _fpsCamera.gameObject.SetActive(false);
         }
+        OnChangePerspective();
     }
 
     public void SetTPSFieldOfView(float fieldOfView)
