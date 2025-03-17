@@ -79,6 +79,9 @@ public class PlayerMovement : MonoBehaviour
     private float _maxGlideRotationX;
 
     [SerializeField]
+    private PlayerAudioManager _playerAudioManager;
+
+    [SerializeField]
     private float _resetComboInterval;
 
     [SerializeField]
@@ -340,6 +343,7 @@ public class PlayerMovement : MonoBehaviour
             _playerStance = PlayerStance.Glide;
             _cameraManager.setFPSClampedCamera(true, transform.rotation.eulerAngles);
             _animator.SetBool("IsGliding", true);
+            _playerAudioManager.PlayGlideSfx();
         }
     }
 
@@ -350,6 +354,7 @@ public class PlayerMovement : MonoBehaviour
             _playerStance = PlayerStance.Stand;
             _cameraManager.setFPSClampedCamera(false, transform.rotation.eulerAngles);
             _animator.SetBool("IsGliding", false);
+            _playerAudioManager.StopGlideSfx();
         }
     }
 
