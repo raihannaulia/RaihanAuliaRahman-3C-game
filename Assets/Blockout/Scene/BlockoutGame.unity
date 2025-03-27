@@ -97,7 +97,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: a262a661879f17748ac9491bf45c53d0,
+    type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -877,7 +878,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 92078655}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.0018114402, y: 0.99667, z: -0.07818213, w: -0.02309234}
+  m_LocalRotation: {x: -0.0021231684, y: 0.99657, z: -0.07817427, w: -0.02706627}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2783,7 +2784,7 @@ GameObject:
   - component: {fileID: 179703044}
   - component: {fileID: 179703043}
   - component: {fileID: 179703042}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Cube (68)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6431,7 +6432,7 @@ Transform:
   m_GameObject: {fileID: 323654949}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 26.422186, y: -6.06, z: -44.904396}
+  m_LocalPosition: {x: 26.422186, y: -17.27, z: -44.904396}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6969,7 +6970,7 @@ GameObject:
   - component: {fileID: 339609383}
   - component: {fileID: 339609382}
   - component: {fileID: 339609381}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Cube (69)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7308,6 +7309,51 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1845870431}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &347109048
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 347109050}
+  - component: {fileID: 347109049}
+  m_Layer: 0
+  m_Name: GameplayManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &347109049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 347109048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7161f95a32aa29d4880dacb886392769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _inputManager: {fileID: 2131986063}
+--- !u!4 &347109050
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 347109048}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 960, y: 540, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &349105532
 Mesh:
   m_ObjectHideFlags: 0
@@ -7544,7 +7590,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 351778380}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.0026490733, y: 0.9931722, z: -0.114334516, w: -0.023011303}
+  m_LocalRotation: {x: -0.00310495, y: 0.9930726, z: -0.11432304, w: -0.0269713}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -10651,7 +10697,7 @@ GameObject:
   - component: {fileID: 538319947}
   - component: {fileID: 538319946}
   - component: {fileID: 538319945}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: ClimbableWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13211,7 +13257,7 @@ GameObject:
   - component: {fileID: 623634250}
   - component: {fileID: 623634249}
   - component: {fileID: 623634248}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Cube (67)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21320,8 +21366,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 961739749}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.003464846, y: 0.98848385, z: -0.14954329, w: -0.022902697}
-  m_LocalPosition: {x: 3.0159426, y: 2.4271967, z: 6.3937807}
+  m_LocalRotation: {x: -0.0040611047, y: 0.98838466, z: -0.14952825, w: -0.026843978}
+  m_LocalPosition: {x: 2.7128365, y: 2.39, z: 7.6855774}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -24133,7 +24179,7 @@ Transform:
   m_GameObject: {fileID: 1042869050}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 66.84941, y: 6.35, z: 9.0443125}
+  m_LocalPosition: {x: 66.84941, y: 5.85, z: 9.0443125}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -33439,8 +33485,8 @@ Transform:
   m_GameObject: {fileID: 1583208332}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 69.66941, y: 2.94, z: 8.895602}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 69.66941, y: 3.0514002, z: 8.895602}
+  m_LocalScale: {x: 1, y: 0.8726016, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1845870431}
@@ -34848,7 +34894,7 @@ GameObject:
   - component: {fileID: 1702255815}
   - component: {fileID: 1702255814}
   - component: {fileID: 1702255813}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Cube (70)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35201,7 +35247,7 @@ GameObject:
   - component: {fileID: 1707662720}
   - component: {fileID: 1707662719}
   - component: {fileID: 1707662718}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: ClimbableWall (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35964,7 +36010,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1733304425}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.0034648462, y: 0.98848385, z: -0.14954326, w: -0.0229027}
+  m_LocalRotation: {x: -0.0040611043, y: 0.98838466, z: -0.14952825, w: -0.026843982}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -36103,7 +36149,7 @@ Transform:
   m_GameObject: {fileID: 1747527439}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.0159426, y: 2.4271967, z: 6.3937807}
+  m_LocalPosition: {x: 2.7128365, y: 2.39, z: 7.6855774}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -39695,7 +39741,7 @@ GameObject:
   - component: {fileID: 1930004522}
   - component: {fileID: 1930004521}
   - component: {fileID: 1930004520}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: ClimbableWall (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43313,22 +43359,22 @@ PrefabInstance:
     - target: {fileID: 909592932774118763, guid: c9d46ec5bca099b42a82143d9d18a83a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.877
+      value: 2.55
       objectReference: {fileID: 0}
     - target: {fileID: 909592932774118763, guid: c9d46ec5bca099b42a82143d9d18a83a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.42719674
+      value: 0.3900001
       objectReference: {fileID: 0}
     - target: {fileID: 909592932774118763, guid: c9d46ec5bca099b42a82143d9d18a83a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.397
+      value: 4.69
       objectReference: {fileID: 0}
     - target: {fileID: 909592932774118763, guid: c9d46ec5bca099b42a82143d9d18a83a,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 909592932774118763, guid: c9d46ec5bca099b42a82143d9d18a83a,
         type: 3}
@@ -43338,7 +43384,7 @@ PrefabInstance:
     - target: {fileID: 909592932774118763, guid: c9d46ec5bca099b42a82143d9d18a83a,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 909592932774118763, guid: c9d46ec5bca099b42a82143d9d18a83a,
         type: 3}
@@ -43353,7 +43399,7 @@ PrefabInstance:
     - target: {fileID: 909592932774118763, guid: c9d46ec5bca099b42a82143d9d18a83a,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -180
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 909592932774118763, guid: c9d46ec5bca099b42a82143d9d18a83a,
         type: 3}
@@ -43368,7 +43414,7 @@ PrefabInstance:
     - target: {fileID: 5553125302027823482, guid: c9d46ec5bca099b42a82143d9d18a83a,
         type: 3}
       propertyPath: _jumpForce
-      value: 50000
+      value: 15000
       objectReference: {fileID: 0}
     - target: {fileID: 5553125302027823482, guid: c9d46ec5bca099b42a82143d9d18a83a,
         type: 3}
@@ -43380,6 +43426,11 @@ PrefabInstance:
       propertyPath: _cameraTransform
       value: 
       objectReference: {fileID: 961739753}
+    - target: {fileID: 8034510098523617838, guid: c9d46ec5bca099b42a82143d9d18a83a,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8478935567045481474, guid: c9d46ec5bca099b42a82143d9d18a83a,
         type: 3}
       propertyPath: m_Name
@@ -43403,3 +43454,4 @@ SceneRoots:
   - {fileID: 2131986064}
   - {fileID: 927997014}
   - {fileID: 1747527441}
+  - {fileID: 347109050}
