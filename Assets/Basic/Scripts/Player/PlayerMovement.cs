@@ -91,6 +91,9 @@ public class PlayerMovement : MonoBehaviour
     private float _hitDetectorRadius;
 
     [SerializeField]
+    private Transform _resetCheckpointPosition;
+
+    [SerializeField]
     private LayerMask _hitLayer;
 
     private Coroutine _resetCombo;
@@ -117,6 +120,14 @@ public class PlayerMovement : MonoBehaviour
 
     private Vector3 rotationDegree = Vector3.zero;
 
+    public void ResetPositionToCheckpoint()
+    {
+        if (_resetCheckpointPosition != null)
+        {
+            transform.position = _resetCheckpointPosition.position;
+            transform.rotation = _resetCheckpointPosition.rotation;
+        }
+    }
     private void Awake()
     {
         _rigidbody = GetComponent<Rigidbody>();

@@ -6,11 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Basic/Scenes/MainMenu.unity
-    guid: 56641bbc4d54b28458eb378711ce2f8c
+    path: Assets/Game/ForestHill/ForestHillMainMenu.unity
+    guid: 517c4b06093f16f4bac1f6d37ef2255d
   - enabled: 1
+    path: Assets/Game/ForestHill/ForestHillGame.unity
+    guid: 8ddd2c84c4973994a91dac4148eff925
+  - enabled: 0
     path: Assets/Game/Blockout/Scene/BlockoutGame.unity
     guid: 3ce3812066772224da302cfd8ff2c23d
+  - enabled: 0
+    path: Assets/Basic/Scenes/MainMenu.unity
+    guid: 56641bbc4d54b28458eb378711ce2f8c
   - enabled: 0
     path: Assets/Basic/Scenes/Gameplay.unity
     guid: 99c9720ab356a0642a771bea13969a05
